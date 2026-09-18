@@ -4,7 +4,7 @@ import styles from './About.module.css';
 const About = ({
   name = 'John Vincent Canseco',
   bio = 'I create modern, responsive web experiences with React and JavaScript.',
-  image = '/profile.jpg',
+  image = '/myPortfolioWebsite/profile.jpg',
 }) => {
   return (
     <section className={styles.section} id="about">
