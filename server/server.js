@@ -9,6 +9,8 @@ const port = process.env.PORT || 5000;
 const allowedOrigins = [
   'http://localhost:3000',
   'http://localhost:5173',
+  'https://jtc105.github.io',
+  'https://jtc105.github.io/myPortfolioWebsite'
 ];
 
 app.use(
