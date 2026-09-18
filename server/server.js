@@ -10,7 +10,8 @@ const allowedOrigins = [
   'http://localhost:3000',
   'http://localhost:5173',
   'https://jtc105.github.io',
-  'https://jtc105.github.io/myPortfolioWebsite'
+  'https://jtc105.github.io/myPortfolioWebsite',
+  'https://myportfoliowebsite-production-8bbd.up.railway.app'
 ];
 
 app.use(
