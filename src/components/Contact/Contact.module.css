@@ -1,0 +1,129 @@
+.section {
+  display: grid;
+  grid-template-columns: 0.85fr 1.15fr;
+  gap: 5rem;
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 7rem 2rem;
+}
+
+.intro h2 {
+  max-width: 500px;
+  margin: 0.75rem 0 1.5rem;
+  color: #101828;
+  font-size: clamp(2.4rem, 5vw, 4.5rem);
+  line-height: 1;
+  letter-spacing: -0.06em;
+}
+
+.intro > p:last-child {
+  max-width: 430px;
+  color: #667085;
+  line-height: 1.7;
+}
+
+.eyebrow {
+  margin: 0;
+  color: #635bff;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.form {
+  display: grid;
+  gap: 1.25rem;
+  padding: 2rem;
+  border: 1px solid #eaecf0;
+  border-radius: 24px;
+  background: #fff;
+  box-shadow: 0 24px 60px rgb(16 24 40 / 8%);
+}
+
+.formGroup {
+  display: grid;
+  gap: 0.5rem;
+}
+
+.formGroup label {
+  color: #344054;
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+
+.formGroup input,
+.formGroup textarea {
+  width: 100%;
+  border: 1px solid #d0d5dd;
+  border-radius: 12px;
+  padding: 0.9rem 1rem;
+  color: #101828;
+  background: #fff;
+  font: inherit;
+  outline: none;
+  resize: vertical;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.formGroup input:focus,
+.formGroup textarea:focus {
+  border-color: #635bff;
+  box-shadow: 0 0 0 4px rgb(99 91 255 / 12%);
+}
+
+.formGroup input[aria-invalid='true'],
+.formGroup textarea[aria-invalid='true'] {
+  border-color: #f04438;
+}
+
+.error {
+  color: #d92d20;
+  font-size: 0.8rem;
+}
+
+.submitButton {
+  justify-self: start;
+  border: 0;
+  border-radius: 999px;
+  padding: 0.95rem 1.4rem;
+  color: #fff;
+  background: #101828;
+  font: inherit;
+  font-weight: 700;
+  cursor: pointer;
+  box-shadow: 0 10px 25px rgb(16 24 40 / 18%);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.submitButton:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 15px 30px rgb(16 24 40 / 25%);
+}
+
+.success {
+  margin: 0;
+  color: #027a48;
+  font-size: 0.9rem;
+}
+
+/* ...existing code... */
+
+.submitButton:disabled {
+  cursor: wait;
+  opacity: 0.6;
+}
+
+.serverError {
+  margin: 0;
+  color: #d92d20;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 800px) {
+  .section {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+    padding: 5rem 1.5rem;
+  }
+}

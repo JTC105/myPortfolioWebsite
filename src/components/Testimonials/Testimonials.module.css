@@ -1,0 +1,57 @@
+.section {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 8rem 2rem;
+  text-align: center;
+}
+
+.eyebrow {
+  color: #635bff;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+blockquote {
+  margin: 2rem 0;
+  color: #101828;
+  font-size: clamp(2rem, 5vw, 4rem);
+  line-height: 1.1;
+  letter-spacing: -0.06em;
+}
+
+.author {
+  display: grid;
+  gap: 0.35rem;
+  color: #101828;
+}
+
+.author span {
+  color: #98a2b3;
+}
+
+.controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 2.5rem;
+  color: #98a2b3;
+}
+
+.controls button {
+  width: 42px;
+  height: 42px;
+  border: 1px solid #d0d5dd;
+  border-radius: 50%;
+  color: #101828;
+  background: #fff;
+  cursor: pointer;
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.controls button:hover {
+  background: #f2f4f7;
+  transform: scale(1.08);
+}
