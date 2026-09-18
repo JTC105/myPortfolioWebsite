@@ -4,7 +4,6 @@ dist/
 .env.*
 !.env.example
 
-server/node_modules/
 server/.env
 server/.env.*
 !.env.example
