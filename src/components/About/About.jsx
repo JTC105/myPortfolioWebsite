@@ -4,7 +4,7 @@ import styles from './About.module.css';
 const About = ({
   name = 'John Vincent Canseco',
   bio = 'I craft full‑stack applications with React, JavaScript, and robust .NET backend services.',
-  image = '/myPortfolioWebsite/resume_pic.jpg',
+  image = '/resume_pic.jpg',
 }) => {
   return (
     <section className={styles.section} id="about">
