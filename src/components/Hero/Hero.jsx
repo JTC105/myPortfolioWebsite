@@ -5,16 +5,16 @@ const Hero = () => {
   return (
     <section className={styles.hero} id="home">
       <div className={styles.content}>
-        <p className={styles.eyebrow}>Frontend Developer & Designer</p>
-
+        <p className={styles.eyebrow}>Full-Stack Developer / .NET Developer</p>
+ 
         <h1>
-          Building digital experiences
-          <span> people enjoy using.</span>
+          Building things
+          <span>that don&apos;t break.</span>
         </h1>
 
         <p className={styles.description}>
-          I create fast, accessible, and polished web applications with a
-          focus on thoughtful design and excellent user experiences.
+          I create scalable full‑stack systems with optimized APIs, 
+          responsive interfaces, and reliable performance across every layer of the stack.
         </p>
 
         <div className={styles.actions}>

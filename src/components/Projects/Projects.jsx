@@ -3,21 +3,21 @@ import styles from './Projects.module.css';
 
 const projects = [
   {
-    title: 'Finance Dashboard',
-    description: 'A focused dashboard for tracking personal finances and goals.',
-    category: 'Product design',
+    title: 'Personal Portfolio - Website',
+    description: 'A focused personal portfolio for showcasing work and achievements.',
+    category: 'Web Design & Development',
     color: 'purple',
   },
   {
-    title: 'Creative Studio',
-    description: 'A refined marketing website for a modern creative agency.',
-    category: 'Web development',
+    title: 'In-house Auxiliary Reporting Channel',
+    description: 'A reporting channel for internal use, designed for bank data collection.',
+    category: 'Web Design & Development',
     color: 'blue',
   },
   {
-    title: 'Task Flow',
-    description: 'A simple productivity tool designed for focused teams.',
-    category: 'React application',
+    title: 'F3DE - File Formatter & Data Extractor',
+    description: 'A simple productivity tool designed for Data Extraction Requests.',
+    category: 'Standalone Application Development',
     color: 'orange',
   },
 ];
@@ -31,8 +31,8 @@ const Projects = () => {
           <h2>Projects with purpose.</h2>
         </div>
         <p className={styles.intro}>
-          A selection of products and experiences built with clarity,
-          performance, and detail in mind.
+          A curated collection of full‑stack and .NET projects 
+          built with performance, clarity, and real‑world impact in mind.
         </p>
       </div>
 

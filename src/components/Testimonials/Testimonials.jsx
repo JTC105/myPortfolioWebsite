@@ -3,14 +3,19 @@ import styles from './Testimonials.module.css';
 
 const testimonials = [
   {
-    quote: 'John transformed our complex idea into a clear and beautiful product.',
-    name: 'Maria Santos',
-    role: 'Product Manager',
+    quote: 'Reliable, detail-oriented, and always committed from start to finish. A dependable colleague who is always willing to answer questions, share knowledge, and lend a helping hand whenever needed. Truly a one-call-away teammate you can always count on.',
+    name: 'Ruby Ann Navarro',
+    role: 'Full-Stack Developer, ITM',
   },
   {
-    quote: 'Reliable, thoughtful, and highly detail-oriented from start to finish.',
-    name: 'Daniel Cruz',
-    role: 'Founder, Northstar',
+    quote: 'A friend who truly knows his value, he is goal-oriented, a dependable team player, and someone you can rely on. His dedication and consistency make him an asset in any endeavor, and his character inspires trust and respect from those around him.',
+    name: 'Anjanette Tabamo',
+    role: 'Associate Technical Architect, BPI',
+  },
+  {
+    quote: 'Even as a first‑year developer, John showed qualities of someone who will eventually lead teams. He communicates clearly, documents his work well, and approaches tasks with a sense of ownership.',
+    name: 'Jan-Benedict Lukban',
+    role: 'Technical Support Representative 4, Foundever',
   },
 ];
 

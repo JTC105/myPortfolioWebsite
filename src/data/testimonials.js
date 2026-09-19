@@ -1,7 +1,7 @@
 export const testimonials = [
   {
     id: 1,
-    text: "This portfolio is amazing! The design is sleek and the functionality is top-notch.",
+    text: "Reliable, detail-oriented, and always committed from start to finish. A dependable colleague who is always willing to answer questions, share knowledge, and lend a helping hand whenever needed. Truly a one-call-away teammate you can always count on.",
     author: "John Doe, Web Developer"
   },
   {

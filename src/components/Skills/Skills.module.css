@@ -53,6 +53,21 @@
   font-size: 2.8rem;
 }
 
+.si-dotnet,
+.si-microsoftsqlserver,
+.si-visualbasic {
+  font-size: 48px; /* match your icon size */
+  color: #512bd4; /* .NET purple */
+}
+
+.si-microsoftsqlserver {
+  color: #CC2927; /* SQL Server red */
+}
+
+.si-visualbasic {
+  color: #68217A; /* VB.NET purple */
+}
+
 @media (max-width: 900px) {
   .grid {
     grid-template-columns: repeat(3, 1fr);

@@ -3,16 +3,16 @@ import styles from './About.module.css';
 
 const About = ({
   name = 'John Vincent Canseco',
-  bio = 'I create modern, responsive web experiences with React and JavaScript.',
-  image = '/myPortfolioWebsite/profile.jpg',
+  bio = 'I craft full‑stack applications with React, JavaScript, and robust .NET backend services.',
+  image = '/myPortfolioWebsite/resume_pic.jpg',
 }) => {
   return (
     <section className={styles.section} id="about">
       <div className={styles.heading}>
         <p className={styles.eyebrow}>A little about me</p>
         <h2>
-          Turning ideas into
-          <span> meaningful experiences.</span>
+          I turn ideas into
+          <span> production‑ready standalone and web applications.</span>
         </h2>
       </div>
 
@@ -28,8 +28,8 @@ const About = ({
 
         <div className={styles.text}>
           <p className={styles.intro}>
-            Hi, I&apos;m <strong>{name}</strong> — a frontend developer focused
-            on building thoughtful digital products.
+            Hi, I&apos;m <strong>{name}</strong> — a full‑stack and .NET developer crafting polished, 
+            meaningful digital experiences across frontend and backend.
           </p>
 
           <p className={styles.bio}>{bio}</p>
@@ -37,7 +37,7 @@ const About = ({
           <div className={styles.details}>
             <div>
               <strong>Focus</strong>
-              <span>UI development & interaction</span>
+              <span>Full‑stack development & modern .NET applications</span>
             </div>
             <div>
               <strong>Based in</strong>
@@ -46,7 +46,7 @@ const About = ({
           </div>
 
           <a href="#contact" className={styles.link}>
-            Let&apos;s work together <span aria-hidden="true">↗</span>
+            Let&apos;s build something great<span aria-hidden="true">↗</span>
           </a>
         </div>
       </div>

@@ -74,8 +74,8 @@ const Contact = () => {
     <section className={styles.section} id="contact">
       <div className={styles.intro}>
         <p className={styles.eyebrow}>Get in touch</p>
-        <h2>Have an idea? Let&apos;s make it happen.</h2>
-        <p>Tell me about your project and I&apos;ll get back to you soon.</p>
+        <h2>You&apos;d like to discuss a role or collaboration?</h2>
+        <p>You can reach me anytime by filling out the form and I&apos;ll get back to you as soon as possible.</p>
       </div>
 
       <form className={styles.form} onSubmit={handleSubmit} noValidate>
