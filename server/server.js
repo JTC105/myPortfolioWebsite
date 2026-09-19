@@ -42,6 +42,9 @@ const transporter = nodemailer.createTransport({
 });
 
 app.post('/api/contact', async (request, response) => {
+  console.log("SMTP_USER:", process.env.SMTP_USER);
+  console.log("SMTP_PASSWORD:", process.env.SMTP_PASSWORD ? "Loaded" : "Missing");
+
   const { name, email, message } = request.body;
 
   if (!name?.trim() || !email?.trim() || !message?.trim()) {
