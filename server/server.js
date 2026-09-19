@@ -1,17 +1,18 @@
 import 'dotenv/config';
 import cors from 'cors';
 import express from 'express';
-import nodemailer from 'nodemailer';
+import { Resend } from 'resend';
 
 const app = express();
 const port = process.env.PORT || 5000;
+
+const resend = new Resend(process.env.RESEND_API_KEY);
 
 const allowedOrigins = [
   'http://localhost:3000',
   'http://localhost:5173',
   'https://jtc105.github.io',
-  'https://jtc105.github.io/myPortfolioWebsite',
-  'https://myportfoliowebsite-production-8bbd.up.railway.app'
+  'https://myportfoliowebsite-production-8bbd.up.railway.app',
 ];
 
 app.use(
@@ -28,23 +29,9 @@ app.use(
   })
 );
 
-// ...existing code...
 app.use(express.json());
 
-const transporter = nodemailer.createTransport({
-  host: process.env.SMTP_HOST,
-  port: Number(process.env.SMTP_PORT || 587),
-  secure: process.env.SMTP_SECURE === 'true',
-  auth: {
-    user: process.env.SMTP_USER,
-    pass: process.env.SMTP_PASSWORD,
-  },
-});
-
 app.post('/api/contact', async (request, response) => {
-  console.log("SMTP_USER:", process.env.SMTP_USER);
-  console.log("SMTP_PASSWORD:", process.env.SMTP_PASSWORD ? "Loaded" : "Missing");
-
   const { name, email, message } = request.body;
 
   if (!name?.trim() || !email?.trim() || !message?.trim()) {
@@ -54,23 +41,36 @@ app.post('/api/contact', async (request, response) => {
   }
 
   try {
-    await transporter.sendMail({
-      from: process.env.SMTP_USER,
-      to: process.env.CONTACT_EMAIL,
+    const { data, error } = await resend.emails.send({
+      from: process.env.EMAIL_FROM,
+      to: [process.env.CONTACT_EMAIL],
       replyTo: email,
       subject: `Portfolio message from ${name}`,
       text: `Name: ${name}\nEmail: ${email}\n\n${message}`,
     });
 
-    return response.json({ message: 'Message sent successfully.' });
+    if (error) {
+      console.error('Resend error:', error);
+
+      return response.status(500).json({
+        message: 'Unable to send the message.',
+      });
+    }
+
+    console.log('Email sent successfully:', data?.id);
+
+    return response.json({
+      message: 'Message sent successfully.',
+    });
   } catch (error) {
     console.error('Email error:', error);
+
     return response.status(500).json({
       message: 'Unable to send the message.',
     });
   }
 });
 
-app.listen(port, "0.0.0.0", () => {
+app.listen(port, '0.0.0.0', () => {
   console.log(`Server running on port ${port}`);
 });
