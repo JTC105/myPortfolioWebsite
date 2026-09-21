@@ -52,9 +52,9 @@ const Projects = () => {
               <p>{project.category}</p>
               <h3>{project.title}</h3>
               <span>{project.description}</span>
-              <a href="#contact" aria-label={`Discuss ${project.title}`}>
+              {/* <a href="#contact" aria-label={`Discuss ${project.title}`}>
                 View project ↗
-              </a>
+              </a> */}
             </div>
           </article>
         ))}

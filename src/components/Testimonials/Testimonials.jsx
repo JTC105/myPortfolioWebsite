@@ -17,6 +17,11 @@ const testimonials = [
     name: 'Jan-Benedict Lukban',
     role: 'Technical Support Representative 4, Foundever',
   },
+  {
+    quote: 'Throughout our collaboration, JV consistently exceeded expectations. A team player with an approach to complex challenges with a cool head and creative problem-solving skills, earning the complete trust of both peers and leadership. He will be a tremendous asset to any team.',
+    name: 'Sherry Mae Catubay',
+    role: 'Software Developer, Metrobank Trust and Company',
+  },
 ];
 
 const Testimonials = () => {
